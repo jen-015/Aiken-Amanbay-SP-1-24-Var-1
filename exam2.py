@@ -43,6 +43,9 @@ class BattleArena:
             fighter1.attack_enemy(fighter2)
             if fighter2.is_alive():
                 fighter2.attack_enemy(fighter1)
+            print("\nCurrent fighters stats:")
+            for fighter in self.fighters:
+                fighter.show_stats()
             print()
     def show_winner(self):
         winner = self.get_alive_fighters()[0]
@@ -57,5 +60,6 @@ arena.add_fighter(mage)
 arena.start_battle()
 
 arena.show_winner()
+
 
 
