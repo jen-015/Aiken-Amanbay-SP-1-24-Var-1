@@ -18,8 +18,6 @@ class Fighter:
             self.alive=False
             print(f"{self.name} takes {damage} damage. Health: {self.health}")
             print(f"{self.name} has died")
-        else:
-            print(f"{self.name} takes {damage} damage. Health: {self.health}")
     def is_alive(self):
         return self.alive
     def show_stats(self):
@@ -59,4 +57,5 @@ arena.add_fighter(mage)
 arena.start_battle()
 
 arena.show_winner()
+
 
