@@ -22,6 +22,13 @@ class Fighter:
             print(f"{self.name} takes {damage} damage. Health: {self.health}")
     def is_alive(self):
         return self.alive
+    def show_stats(self):
+        print(f"Name: {self.name}")
+        print(f"Health: {self.health}")
+        print(f"Attack: {self.attack}"  )
+        print(f"Defense: {self.defense}")
+        print(f"Alive: {self.alive}")
+        print()
 import random
 class BattleArena:
     def __init__(self):
@@ -52,3 +59,4 @@ arena.add_fighter(mage)
 arena.start_battle()
 
 arena.show_winner()
+
